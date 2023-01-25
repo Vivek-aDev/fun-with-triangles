@@ -8,12 +8,38 @@
     <title>is Triangle📐</title>
   </head>
   <body>
+    <!-- header  -->
+    <header>
+      <h1>fun with triangles</h1>
+      <nav>
+        <a href="/">Is Triangle?</a>
+        <a href="pages/quiz.html">Quiz</a>
+        <a href="pages/calculate-hypo.html">Hypotenuse</a>
+        <a href="pages/calculate-area.html">Area of Triangle</a>
+      </nav>
+    </header>
     <h1>is 📐Triangle ⁉</h1>
-    <p>
-      Just input three angles in the box and see if it forms a Triangle or not!
-    </p>
+    <main class="angles-triangles-main">
+      <h4>Angles of triangles</h4>
+      <label class="input-label" for="Angle1">
+        <p>Angle1</p>
+      </label>
+      <input type="number" class="input-text angle-input" />
+      <label class="input-label" for="Angle2">
+        <p>Angle2</p>
+      </label>
+      <input type="number" class="input-text angle-input" />
+      <label class="input-label" for="Angle3">
+        <p>Angle3</p>
+      </label>
+      <input type="number" class="input-text angle-input" />
+      <button class="btn-check" id="is-triangle-btn">Is Triangle?</button>
+      <h2 class="output"></h2>
+      <p id="output" class="output"></p>
+    </main>
     
-    <label for="angle1">Angle1</label>
+
+    <!-- <label for="angle1">Angle1</label>
     <input type="number" class="angle-input" />
     <label for="angle2">Angle2</label>
     <input type="number" class="angle-input" />
@@ -22,8 +48,8 @@
 
     <button id="is-triangle-btn">is Triangle</button>
 
-    <div id="output"></div>
+    <div id="output"></div> -->
 
-    <script src="/app.js"></script>
+    <script src="/scripts/istriangle.js"></script>
   </body>
 </html>

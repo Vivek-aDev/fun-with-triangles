@@ -1,85 +1,129 @@
-/* Add a background color to the body */
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #22c55e;
+}
+
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    text-align: center;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
 }
 
-/* Center the "is Triangle" button */
-#is-triangle-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Green */
-    /* color: rgb(255, 235, 50); */
-    color: black;
-    font-size: 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-#is-triangle-btn:focus{
-    background-color: rgb(255, 238, 0);
+a {
+  text-decoration: none;
 }
 
-
-/* Style the angle input fields */
-.angle-input {
-    display: block;
-    margin: auto;
-    padding: 10px;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #4CAF50;
-    text-align: center;
+li {
+  list-style: none;
 }
 
-/* Add a hover effect to the angle input fields */
-.angle-input:hover {
-    border-color: rgb(240, 213, 93);
-    box-shadow: 0 0 10px rgb(190, 241, 68);
+/* Header */
+
+header {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-/* Add a focus effect to the angle input fields */
-.angle-input:focus {
-    border-color: rgb(240, 155, 57);
-    box-shadow: 0 0 10px rgb(190, 241, 68);
-    outline: none;
+header h1 {
+  font-family: "Megrim", cursive;
+  text-align: initial;
 }
 
-/* Change the font family of the h1 and p elements */
-h1, p {
-    margin: 0;
-    padding: 20px;
-    font-size: 30px;
-    color: black;
+nav {
+  text-align: right;
 }
 
-label{
-    
-    font-size: 20px;
+nav > a {
+  padding: 0 0.5rem;
 }
 
-/* Style the output div */
-#output {
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 10px;
-    text-align: center;
-    font-size: 26px;
-    border-radius: 30px;
+/* Main */
+
+main {
+  margin: 0 0 7rem;
 }
 
-/* Media Queries */
-@media (max-width: 600px) {
-    /* Stack the angle input fields on top of each other */
-    .angle-input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    /* Make the h1 and p text smaller */
-    h1, p {
-        font-size: 20px;
-    }
+main h1 {
+  margin: 1rem;
+}
+
+/*  Input */
+
+.input-label {
+  font-size: larger;
+  color: var(--primary-color);
+  width: 256px;
+}
+
+.input-label p {
+  font-size: larger;
+  margin: 0.5rem;
+}
+
+.input-text {
+  font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
+}
+
+.btn-check {
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: 1rem auto;
+  display: block;
+}
+
+.output {
+  font-size: x-large;
+  margin: 1rem;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}
+
+footer p {
+  font-size: large;
+  text-align: center;
+}
+
+.footer-list {
+  margin: 1rem;
+}
+
+a,
+img,
+li {
+  display: inline;
+  color: #fff;
+}
+
+img {
+  width: 40px;
+  padding: 1rem 0.2rem;
 }
